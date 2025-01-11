@@ -1,13 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+
+// Use environment variables from .env file
 const firebaseConfig = {
-  apiKey: "AIzaSyC-OtSvSLnJ22GSxq2eA_qODWPGYcXNt2U",
-  authDomain: "recipe-88b03.firebaseapp.com",
-  projectId: "recipe-88b03",
-  storageBucket: "recipe-88b03.firebasestorage.app",
-  messagingSenderId: "506877206098",
-  appId: "1:506877206098:web:60248ed6511e3a8800c98b",
+  apiKey: "AIzaSyD15L8BDFYZWKPgIYm-4E-ASurmp8Z0KdE",
+  authDomain: "mealdb-e6d74.firebaseapp.com",
+  projectId: "mealdb-e6d74",
+  storageBucket: "mealdb-e6d74.firebasestorage.app",
+  messagingSenderId: "135847057259",
+  appId: "1:135847057259:web:2dcab018681a45fffd1e2e"
 };
 
 const app = initializeApp(firebaseConfig);

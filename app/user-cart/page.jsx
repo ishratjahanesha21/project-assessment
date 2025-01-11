@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { auth, db } from "../../common/firebaseConfig";
 import { Trash2 } from "lucide-react";
+import Image from "next/image";
 
 const UserCart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -76,7 +77,7 @@ const UserCart = () => {
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
               <div className="flex items-center p-4">
-                <img
+                <Image
                   src={item.strMealThumb}
                   alt={item.strMeal}
                   className="w-24 h-24 rounded-lg object-cover"

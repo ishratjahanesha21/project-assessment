@@ -1,3 +1,16 @@
+# Recipe App
+
+# Search section bugs :
+
+The previous code had issues with state management and event handling: e.preventDefault() was missing, causing page refreshes, and searchInput was improperly managed, leading to filtering errors. The updated code resolves these by adding e.preventDefault(), ensuring searchInput is treated as a string, handling case-insensitive searches, and filtering only when a query exists. These fixes improve functionality and prevent stale or incorrect results.
+
+# Modal Bugs:
+
+The issue occurs because recipeId isn't passed to SingleRecipe, and the modal lacks proper state and data handling. To fix this, pass the recipeId and setIsOpen to SingleRecipe so it can fetch the correct details and close the modal when needed. Update getRecipeDetails to use async/await for predictable data fetching, ensuring the recipe details are fully loaded before rendering. This will display the correct data in the modal.
+
+# New features:
+
+
 # All Recipe List and Add to cart :
 
 Technical Summary:
